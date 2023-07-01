@@ -19,6 +19,8 @@ def index(request):
 
   return render(request,'pages/index.html',context)
 
+def news(request):
+  return render(request,'pages/news.html')
 def about(request):
   
    return render(request,'pages/about.html')
