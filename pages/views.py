@@ -37,6 +37,7 @@ def contact(request):
    data=ContactForm(request.POST)
    if data.is_valid():
       data.save()
+      return redirect('/')
   context={
       'data':client_data.objects.all(),
       'form':data
